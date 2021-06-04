@@ -1,0 +1,20 @@
+[
+    {
+        "id": "lyric_path",
+        "label": "Specify downloaded lyric path",
+        "type": "text",
+        "default": "/lyrics"
+    },
+    {
+        "id": "show_debug_info",
+        "label": "Show debug info",
+        "type": "bool",
+        "default": "false"
+    },
+    {
+        "id": "itunes_name_style",
+        "label": "Remove leading track number of iTunes named files for better matching",
+        "type": "bool",
+        "default": "false"
+    }
+]
