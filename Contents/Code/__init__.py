@@ -7,7 +7,7 @@ from zhconv import convert
 import re
 
 
-NETEASE_LYRIC_SEARCH_API = "http://music.163.com/api/search/pc?s=%s&offset=0&limit=50&total=true&type=1"
+NETEASE_LYRIC_SEARCH_API = "http://music.163.com/api/search/get/web?s=%s&offset=0&limit=50&total=true&type=1"
 NETEASE_LYRIC_DOWNLOAD_API = "http://music.163.com/api/song/lyric?os=pc&id=%s&lv=-1&kv=0&tv=-1"
 QUERY_SLEEP_TIME = 0.1 # How long to sleep before firing off each API request.
 LYRICS_PATH = Prefs['lyric_path']
