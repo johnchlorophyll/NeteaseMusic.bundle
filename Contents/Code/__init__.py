@@ -34,7 +34,7 @@ def search_lyric(artist, album, title):
         return list()
 
     url = NETEASE_LYRIC_SEARCH_API % urllib.quote(title)
-    headers = {'content-type': 'application/json; charset=utf-8'}
+    headers = {'content-type': 'application/json; charset=utf-8', 'X-Real-IP': '1.1.0.0'}
     if ENABLE_DEBUG: Log("search url: " + url)
     if ENABLE_DEBUG: Log("title: " + title)
     if ENABLE_DEBUG: Log("album: " + album)
