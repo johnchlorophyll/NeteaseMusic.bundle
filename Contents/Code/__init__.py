@@ -131,7 +131,7 @@ class NeteaseMusicLyricFindAlbumAgent(Agent.Album):
                         album = convert(meta_info_from_path[-2].decode('utf-8'), 'zh-cn').encode('utf-8')
                         title = convert(meta_info_from_path[-1].decode('utf-8'), 'zh-cn').encode('utf-8')
                         if USE_ITUNES_NAME_STYLE:
-                            title = re.sub(r'(^[1-9]+\s)|(^[1-9]+-[1-9]+\s)', '', title)
+                            title = re.sub(r'(^[0-9]+\s)|(^[0-9]+-[0-9]+\s)', '', title)
 
                         lrcfilename = artist + '_' + album + '_' + title + '.lrc'
                         lrcfilename = os.path.join(LYRICS_PATH, lrcfilename).replace(" ", "")
